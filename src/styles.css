@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  color: aliceblue;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: rgb(46, 37, 37);
+}
+
+.container {
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container {
+  padding: 50px;
+  max-width: 900px;
+  margin: auto;
+}
