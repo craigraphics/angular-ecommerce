@@ -9,7 +9,7 @@ import { Product } from '../models/product';
 })
 export class CartService {
   private apiUrl = environment.apiUrl + '/cart';
-  private apicheckoutUrl = environment.apiUrl + '/checkout';
+  private apiCheckoutUrl = environment.apiUrl + '/checkout';
 
   constructor(private http: HttpClient) {}
 
@@ -25,7 +25,7 @@ export class CartService {
     return this.http.delete<void>(this.apiUrl);
   }
 
-  checkoutCart(products: Product[]): Observable<Product[]> {
-    return this.http.post<Product[]>(this.apicheckoutUrl, products);
+  checkoutCart(products: Product[]): Observable<void> {
+    return this.http.post<void>(this.apiCheckoutUrl, products);
   }
 }
