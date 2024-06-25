@@ -16,8 +16,16 @@ body {
   margin: auto;
 }
 
-.container {
+.container-sm {
   padding: 50px;
   max-width: 900px;
   margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
